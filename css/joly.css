@@ -1,0 +1,193 @@
+
+.kang-movie{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.711), rgba(0, 0, 0, 0.874)),url('../images/joly.verticalavif.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+}
+.details-kang{
+    display: flex;
+}
+.details-kang img{
+    height: 400px;
+    width: 250px;
+    margin: 20px 0 0 140px;
+    border-radius: 9px;
+
+}
+.details-kang .head1{
+    color: white;
+    margin: 50px 0 0 40px;
+    font-size: 40px;
+    font-family: cursive;
+}
+.details-kang .ratenow{
+    display: flex;
+    color: white;
+    margin: 50px 0 0 40px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    backdrop-filter: blur(10px); /* Applies the blur effect */
+            background: rgba(206, 203, 203, 0.3); /* Optional: Adds a semi-transparent overlay */
+            position: absolute;
+    border-radius: 6px;
+    height: 50px;
+    padding:  10px 0 0 10px;
+
+}
+.ratenow .r2{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    margin: 0 7px 0 20px;
+    padding: 0 0 0 10px;
+    height: 30px;
+    font-family:sans-serif;
+}
+.side-head{
+    color: black;
+    background-color: white;
+    margin: 120px 180px 0 40px;
+    font-size: 17px;
+    font-family: sans-serif;
+
+}
+.side-head:hover{
+    text-decoration: underline;
+}
+.side-head2{
+    color: rgba(255, 255, 255, 0.829);
+    font-family: sans-serif;
+    margin:40px 0 0 50px;
+}
+#booknow {
+       margin:50px 0 0 50px;
+    font-family: sans-serif;
+}
+.side-head3{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.p2{
+
+    margin-left: 60px;
+}
+
+.card {  
+    border: none;  
+}  
+
+.card-img-top {  
+    border-radius: 50%; /* Makes the images round */  
+    width: 150px; /* Fixed size for images */  
+    height: 150px; /* Fixed size for images */  
+    object-fit: cover;  
+}  
+
+/* Optional: Add hover effect */  
+.card:hover {  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);  
+}
+@media screen and (max-width: 650px) {  
+    .details-kang img {  
+        height: 50%; /* Allow height to adjust based on width */  
+        width: 50%; /* Full width to utilize smaller screen space */  
+        margin: 20px auto; /* Center image and reduce margin */  
+        border-radius: 9px;  
+    }  
+
+    .details-kang .head1 {  
+        color: white;  
+        margin: 20px 0 0 10px; /* Adjusted margins for smaller screens */  
+        font-size: 32px; /* Slightly smaller for better fit */  
+        font-family: cursive;  
+    }  
+
+    .details-kang .ratenow {  
+        display: flex;  
+        color: white;  
+        margin: 15px 10px; /* Adjusted margin */  
+        font-size: 18px; /* Slightly smaller for better fit */  
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,  
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+        backdrop-filter: blur(8px); /* Adjusted blur effect */  
+        background: rgba(206, 203, 203, 0.5); /* Increased transparency for contrast */  
+        position: relative; /* Changed to relative for flow */  
+        border-radius: 6px;  
+        height: auto; /* Allow height to adjust */  
+        padding: 10px; /* Add internal padding */  
+        flex-wrap: wrap; /* Allow content to wrap */  
+    }  
+
+    .ratenow .r2 {  
+        background-color: aliceblue;  
+        color: black;  
+        border-radius: 5px;  
+        margin: 0 5px; /* Reduced margin */  
+        padding: 5px 10px; /* Adjusted padding for better touch target */  
+        height: auto; /* Allow height to adjust */  
+        font-family: sans-serif;  
+        font-size: 16px; /* Adjust font size for better fit */  
+    }  
+
+    .side-head {  
+        color: black;  
+        background-color: white;  
+        margin: 4px 20px 0 20px; /* Reduced margins for smaller screens */  
+        font-size: 16px; /* Adjust font size */  
+        font-family: sans-serif;  
+        padding: 10px; /* Add padding for touch devices */  
+        border-radius: 5px; /* Optional: Add rounding for aesthetic */  
+    }  
+
+    .side-head:hover {  
+        text-decoration: underline;  
+    }  
+
+    .side-head2 {  
+        color: rgba(255, 255, 255, 0.829);  
+        font-family: sans-serif;  
+        margin: 20px 10px; /* Adjusted for smaller screens */  
+        font-size: 14px; /* Smaller font for side headers */  
+    }  
+
+    #booknow {  
+        margin: 30px auto; /* Centered and adjusted margin */  
+        font-family: sans-serif;  
+        text-align: center; /* Center text for better presentation */  
+        font-size: 18px; /* Adjusted font size for better readability */  
+    }  
+
+    .side-head3 {  
+        font-size: 32px; /* Adjusted size */  
+        font-weight: bolder;  
+        margin: 20px 10px; /* Added margin */  
+    }  
+
+    .p2 {  
+        margin-left: 0; /* Reset for smaller widths */  
+        margin-top: 10px; /* Add some top margin instead */  
+        font-size: 14px; /* Slightly smaller font for better fit */  
+    }  
+
+    .card {  
+        border: none;  
+        margin: 10px; /* Added margin for spacing */  
+    }  
+
+    .card-img-top {  
+        border-radius: 50%; /* Keeps images round */  
+        width: 120px; /* Adjusted for smaller screens */  
+        height: 120px; /* Adjusted for smaller screens */  
+        object-fit: cover;  
+        margin: 0 auto; /* Center images */  
+    }  
+
+    /* Optional: Add hover effect */  
+    .card:hover {  
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  
+    }  
+}

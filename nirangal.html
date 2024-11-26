@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanguva</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/favicon-bms.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nirangal.css">
+</head>
+<body>
+      <div class="header">
+          <div class="box1">
+              <img src="./images/org-BMS.jpg" alt="">
+          </div>
+          <div class="box2">
+              <form action="">
+                  <input type="search" placeholder=" &#x1F50D search for events,movies,concerts">
+              </form>
+          </div>
+          <div class="box3">
+              <a href="./login.html"><button type="button" id="sign">
+                  sign in
+              </button></a>
+  
+          </div>
+          <div class="box4" id="show-loc">
+            <button>Dindigul &#x25BC</button>
+          </div>
+  
+          <div class="box5">
+              <nav class="navbar bg-body">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hey</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> &#128276 Notifications</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"> &#128179 play credit/debit card</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              &#10067 help and support
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">FAQ's</a></li>
+                              <li><a class="dropdown-item" href="#">Help centre events</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Book a change</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                  
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+  
+          </div>
+      </div>
+      <div id="location" class="text-center" style="display: none;">
+        <div class="container">
+          <div class="search-bar">
+            <input type="text" placeholder="Search for your city" />
+            <button class="location-btn">Detect my location</button>
+          </div>
+          <h2>Popular Cities</h2>
+          <div class="cities">
+            <!-- City List -->
+            <div class="city">
+              <button type="button" onclick="selectCity('Mumbai')">
+                <img src="./images/mumbai.avif" alt="Mumbai">
+              </button>
+              <p>Mumbai</p>
+            </div>
+            <div class="city">
+              <button type="button" onclick="selectCity('Bengaluru')">
+                <img src="./images/ahd.avif" alt="Bengaluru">
+              </button>
+              <p>Bengaluru</p>
+            </div>
+            <div class="city">
+              <button type="button" onclick="selectCity('Chennai')">
+                <img src="./images/chen.avif" alt="Chennai">
+              </button>
+              <p>Chennai</p>
+            </div>
+            <div class="city">
+              <button type="button" onclick="selectCity('Hyderabad')">
+                <img src="./images/hyd.png" alt="Hyderabad">
+              </button>
+              <p>Hyderabad</p>
+            </div>
+          </div>
+          <a href="#" class="view-all">View All Cities</a>
+        </div>
+      </div>
+      <nav class="bg-gray-300 text-black py-2">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center flex-wrap">
+            
+            <!-- Left Side - Movies, Stream, Activities, Concerts -->
+            <div class="flex items-center space-x-4 sm:space-x-6">
+                <a href="#" class="text-sm sm:text-base font-semibold hover:text-red-700">Movies</a>
+                <a href="#" class="text-sm sm:text-base font-semibold hover:text-red-700">Stream</a>
+                <a href="#" class="text-sm sm:text-base font-semibold hover:text-red-700">Activities</a>
+                <a href="#" class="text-sm sm:text-base font-semibold hover:text-red-700">Concerts</a>
+            </div>
+  
+            <!-- Right Side - List Your Show, Corporates, Offers, Gift Cards -->
+            <div class="flex items-center space-x-4 sm:space-x-6 mt-3 sm:mt-0">
+                <a href="#" class="text-fs-5 sm:text-base font-semibold hover:text-red-700">List Your Show</a>
+                <a href="#" class="text-sm sm:text-base font-semibold hover:text-red-700">Corporates</a>
+                <a href="#" class="text-sm sm:text-base font-semibold hover:text-red-700">Offers</a>
+                <a href="#" class="text-sm sm:text-base font-semibold hover:text-red-700">Gift Cards</a>
+            </div>
+        </div>
+    </nav>
+    <div class="kang-movie">
+      <h1>
+        nirangal Mondru
+      </h1>
+      <div class="details-kang">
+        <img src="./images/nirangal.avif" alt="">
+        <div >
+                  <p class="head1">
+                  nirangal Mondru
+                 </p>
+                  <p class="ratenow">
+                    &#11088 8.5/10 (212K Votes) > <span class="r2">Ratenow</span>
+                    <p class="r2">
+                      Ratenow
+                    </p>
+                  </p>
+                  <p class="side-head">
+                    2D,ICE,
+                  </p>
+                  <p class="side-head2">
+                    2h 37m •comedy, Action, drama  • 14 Nov, 2024
+                  </p>
+                  <button type="button" id="booknow">
+                   <a href="./booking-nirangal.html"> <button type="button" class="btn btn-danger btn-lg">BOOK TICKETS</button></a>
+                  </button>
+        </div>
+      </div>
+    </div>
+    <div class="side-head3">
+      About Movie
+    
+    </div>
+    <p class="p2">
+        A thrilling tale set on the night of Soorasamharam, where Lord Murugan loses his Peacock and Vel to the schemes of evil forces. With love, faith, and grit, he bravely battles against the odds to reclaim them. A story of resilience and determination   </p>
+    <br>
+    <br>
+
+    <div class="side-head3">
+      <!-- Cast and Crew
+    </div>
+    <div>
+      <div class="container text-center">  
+        <h1 class="my-4">Cast</h1>  
+        <div class="row mb-5">  
+            <div class="col-lg-4 col-md-6 mb-4">  
+                <div class="card">  
+                    <img src="./images/surya.jpg" alt="Suriya Sivakumar" class="card-img-top rounded-circle">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Suriya Sivakumar</h5>  
+                        <p class="card-text">as Kanguva/Kangaa</p>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="col-lg-4 col-md-6 mb-4">  
+                <div class="card">  
+                    <img src="./images/bobby.jpg" alt="Bobby Deol" class="card-img-top rounded-circle">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Bobby Deol</h5>  
+                        <p class="card-text">as Udhiran</p>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="col-lg-4 col-md-6 mb-4">  
+                <div class="card">  
+                    <img src="./images/heroine.jpg" alt="Disha Patani" class="card-img-top rounded-circle">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Disha Patani</h5>  
+                        <p class="card-text">as Angelina</p>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+
+        <h1 class="my-4">Crew</h1>  
+        <div class="row">  
+            <div class="col-lg-2 col-md-4 mb-4">  
+                <div class="card">  
+                    <img src="./images/dir-siva.jpg" alt="Siva" class="card-img-top rounded-circle">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Siva</h5>  
+                        <p class="card-text">Director</p>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="col-lg-2 col-md-4 mb-4">  
+                <div class="card">  
+                    <img src="./images/producer.jpg" alt="K. E. Gnanavel Raja" class="card-img-top rounded-circle">  
+                    <div class="card-body">  
+                        <h5 class="card-title">K. E. Gnanavel Raja</h5>  
+                        <p class="card-text">Producer</p>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="col-lg-2 col-md-4 mb-4">  
+                <div class="card">  
+                    <img src="./images/dsp.jpg" alt="Devi Sri Prasad" class="card-img-top rounded-circle">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Devi Sri Prasad</h5>  
+                        <p class="card-text">Musician</p>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="col-lg-2 col-md-4 mb-4">  
+                <div class="card">  
+                    <img src="./images/lyric.jpg" alt="Viveka" class="card-img-top rounded-circle">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Viveka</h5>  
+                        <p class="card-text">Lyricist</p>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="col-lg-2 col-md-4 mb-4">  
+                <div class="card">  
+                    <img src="./images/editerni.jpg" alt="Nishad Yusuf" class="card-img-top rounded-circle">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Nishad Yusuf</h5>  
+                        <p class="card-text">Editor</p>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+ -->
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

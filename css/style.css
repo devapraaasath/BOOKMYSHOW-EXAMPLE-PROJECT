@@ -1,0 +1,246 @@
+.header{
+    display:flex;
+}
+.header > .box1 img{
+    height: 100px;
+    width: 150px;
+    margin-left: 150px;
+}
+.header > .box2 input{
+    width: 550px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin:28px 0 0 110px
+}   
+#sign{
+    background-color:rgba(220, 66, 66, 0.915);
+    color: whitesmoke;
+    width: 70px;
+    margin:28px 0 0 150px ;
+    border-radius: 10px;
+    border:none
+}
+.header >.box4{
+    margin:28px 0 0 60px;
+}
+.header >.box4 button{
+    background: none;   /* Removes background color */
+    border: none;   
+}
+.header > .box5{
+    margin: 12px 0px 0 30px;
+}
+
+#location {
+    position: absolute; /* Place it above */
+    top: 0; /* Align with the top of the header */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Make it cover full screen if needed */
+    background: rgba(255, 255, 255, 0.9); /* Optional: Background overlay */
+    z-index: 999; /* Higher than the header and nav */
+    display: none; /* Initially hidden */
+    padding: 20px; /* Optional padding */
+}
+
+.container {  
+    max-width: 800px;  
+    margin: auto;  
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}  
+
+.search-bar {  
+    display: flex;  
+    align-items: center;  
+    margin-bottom: 20px;  
+}  
+
+input[type="text"] {  
+    flex: 1;  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+    margin-right: 10px;  
+}  
+
+.location-btn {  
+    padding: 10px 15px;  
+    background-color: #e63946;  
+    color: white;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    z-index: 2;
+}  
+
+.location-btn:hover {  
+    background-color: #d62839;  
+}  
+
+h2 {  
+    margin: 20px 0;  
+}  
+
+.cities {  
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 20px;  
+}  
+
+.city {  
+    text-align: center;  
+    flex: 1 0 18%; /* Responsive layout */  
+    padding: 10px;  
+    background: #f9f9f9;  
+    border-radius: 4px;  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);  
+}  
+
+.city img {  
+    width: 50px;  
+    height: 50px;  
+}  
+
+.view-all {  
+    display: inline-block;  
+    margin-top: 20px;  
+    color: #e63946;  
+    text-decoration: none;  
+    font-weight: bold;  
+}  
+
+.view-all:hover {  
+    text-decoration: underline;  
+}
+.side-head h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.cards{
+    display: flex;
+}
+
+.card{
+    margin-left: 70px;
+}
+.middle_content1{
+    display:flex;
+    margin-left: 30px;
+}
+.middle_content1 img{
+    margin-left: 30px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.middle_content1 img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
+.premire{
+    display: flex;
+}
+.premire .card{
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.premire .card:hover{
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
+.card-body h5{
+    color: black;
+    font-weight: bolder;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.studio{
+    display: flex;
+}
+.studio .card{
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.studio .card:hover{
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
+@media screen and (max-width: 650px) {
+    .header {
+        display: flex;
+        align-items: center; /* Aligns items vertically */
+    }
+    .header > .box1 img {
+        height: 80px;
+        width: 80px;
+        margin-left: 0px;
+        margin-top: 13px;
+    }
+    .header > .box2 input {
+        width: 200px;
+        height: 30px;
+        border-radius: 6px;
+        margin: 15px 0 0 10px;
+        font-size: 11px;
+    }
+    #sign {
+        width: 50px; /* Adjusted for better usability */
+        margin: 12px 0 0 10px;
+        border-radius: 10px;
+        border: none;
+        font-size: 10px;
+    }
+    .header > .box4 {
+        margin: 13px 0 0 15px;
+    }
+    .header > .box4 button {
+        background: none;
+        border: none;
+        font-size: 10px;
+    }
+    .header > .box5 {
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+    .offcanvas {
+        width: 55%; /* Reduced size for small screens */
+        max-width: none;
+    }
+    .offcanvas-title {
+        text-align: center; /* Center the offcanvas title */
+    }
+    .card{
+        margin-left: 10px;
+        height: 300px;
+        width: 200px;
+    }
+    .middle_content1 img {
+        margin-left: 10px;
+        height: 100px;
+        width: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    .middle_content1 {
+        display: flex;
+        margin-left: 10px;
+    }
+    
+    .middle_content1 img:hover {
+        transform: scale(1.1);
+        filter: brightness(0.9);
+    }
+    .card-body h5{
+        color: black;
+        font-weight: bolder;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
+    
+}
+
+
